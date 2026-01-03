@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+echo "[c] startup: enable promisc & drop in kernel"
+IFACES=($(ls /sys/class/net | grep -E '^eth[0-9]+' | sort -V || true))
+for IF in "${IFACES[@]}"; do
+  ip link set "$IF" promisc on || true
+  iptables -I INPUT   -i "$IF" -j DROP || true
+  iptables -I FORWARD -i "$IF" -j DROP || true
+done
+
+IFACE_MAP=""
+idx=0
+for IF in "${IFACES[@]}"; do
+  IFACE_MAP="$IFACE_MAP $idx:$IF"
+  idx=$((idx+1))
+done
+IFACE_MAP=$(echo "$IFACE_MAP" | xargs)
+
+if [ -z "$IFACE_MAP" ]; then
+  echo "[c] WARNING: no eth* interfaces found; staying idle."
+  tail -f /dev/null
+else
+  echo "[c] launching switch (RAW) with switch-id=2: $IFACE_MAP"
+  echo "python /opt/intpkt/switch.py --switch-id 2 --log-level INFO --iface-map $IFACE_MAP --mac 11:22:33:44:55:0C"
+fi

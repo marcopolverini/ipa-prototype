@@ -1,0 +1,9 @@
+#!/bin/bash
+cp /shared/frr_testnet_model_4x2.pt /opt/intpkt/model.pt
+echo "python3 pkt_sender.py"
+set -e
+echo "[h_src] host ready. Keeping container alive."
+for IF in $(ls /sys/class/net | grep -E '^eth[0-9]+' | sort -V || true); do
+  ip link set "$IF" promisc on || true
+done
+tail -f /dev/null

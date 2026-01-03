@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+echo "python3 pkt_receiver.py"
+echo "[h_dst] host ready. Keeping container alive."
+for IF in $(ls /sys/class/net | grep -E '^eth[0-9]+' | sort -V || true); do
+  ip link set "$IF" promisc on || true
+done
+tail -f /dev/null
