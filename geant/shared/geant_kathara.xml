@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<network xmlns="http://sndlib.zib.de/network" version="1.0">
+ <meta>
+  <granularity>4month</granularity>
+  <time>2005</time>
+  <unit>MBITPERSEC</unit>
+  <origin>Steve Uhlig, http://totem.info.ucl.ac.be/dataset.html, scaled directed peak matrix, period:4 month, total demand 3Tbps</origin>
+ </meta>
+ <networkStructure>
+  <nodes coordinatesType="geographical">
+   <node id="at1.at">
+    <coordinates>
+     <x>16.3729</x>
+     <y>48.2091</y>
+    </coordinates>
+   </node>
+   <node id="be1.be">
+    <coordinates>
+     <x>4.3518</x>
+     <y>50.8469</y>
+    </coordinates>
+   </node>
+   <node id="ch1.ch">
+    <coordinates>
+     <x>6.1399</x>
+     <y>46.2038</y>
+    </coordinates>
+   </node>
+   <node id="cz1.cz">
+    <coordinates>
+     <x>14.4423</x>
+     <y>50.0785</y>
+    </coordinates>
+   </node>
+   <node id="de1.de">
+    <coordinates>
+     <x>8.6842</x>
+     <y>50.1122</y>
+    </coordinates>
+   </node>
+   <node id="es1.es">
+    <coordinates>
+     <x>-3.7033</x>
+     <y>40.4167</y>
+    </coordinates>
+   </node>
+   <node id="fr1.fr">
+    <coordinates>
+     <x>2.351</x>
+     <y>48.8566</y>
+    </coordinates>
+   </node>
+   <node id="gr1.gr">
+    <coordinates>
+     <x>23.5808</x>
+     <y>37.9778</y>
+    </coordinates>
+   </node>
+   <node id="hr1.hr">
+    <coordinates>
+     <x>15.9644</x>
+     <y>45.8071</y>
+    </coordinates>
+   </node>
+   <node id="hu1.hu">
+    <coordinates>
+     <x>19.0936</x>
+     <y>47.4976</y>
+    </coordinates>
+   </node>
+   <node id="ie1.ie">
+    <coordinates>
+     <x>-6.2573</x>
+     <y>53.3416</y>
+    </coordinates>
+   </node>
+   <node id="il1.il">
+    <coordinates>
+     <x>34.8097</x>
+     <y>32.0714</y>
+    </coordinates>
+   </node>
+   <node id="it1.it">
+    <coordinates>
+     <x>9.19</x>
+     <y>45.4642</y>
+    </coordinates>
+   </node>
+   <node id="lu1.lu">
+    <coordinates>
+     <x>6.1296</x>
+     <y>49.6112</y>
+    </coordinates>
+   </node>
+   <node id="nl1.nl">
+    <coordinates>
+     <x>4.9407</x>
+     <y>52.3236</y>
+    </coordinates>
+   </node>
+   <node id="ny1.ny">
+    <coordinates>
+     <x>-73.94384</x>
+     <y>40.6698</y>
+    </coordinates>
+   </node>
+   <node id="pl1.pl">
+    <coordinates>
+     <x>16.8874</x>
+     <y>52.3963</y>
+    </coordinates>
+   </node>
+   <node id="pt1.pt">
+    <coordinates>
+     <x>-9.1363</x>
+     <y>38.7073</y>
+    </coordinates>
+   </node>
+   <node id="se1.se">
+    <coordinates>
+     <x>17.8742</x>
+     <y>59.3617</y>
+    </coordinates>
+   </node>
+   <node id="si1.si">
+    <coordinates>
+     <x>14.5148</x>
+     <y>46.0574</y>
+    </coordinates>
+   </node>
+   <node id="sk1.sk">
+    <coordinates>
+     <x>17.1297</x>
+     <y>48.1531</y>
+    </coordinates>
+   </node>
+   <node id="uk1.uk">
+    <coordinates>
+     <x>-0.1264</x>
+     <y>51.5086</y>
+    </coordinates>
+   </node>
+  <node id="h_src"/><node id="h_dst"/></nodes>
+  <links>
+   <link id="at1.at_ch1.ch">
+    <source>at1.at</source>
+    <target>ch1.ch</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>804.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="at1.at_de1.de">
+    <source>at1.at</source>
+    <target>de1.de</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>598.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="at1.at_hu1.hu">
+    <source>at1.at</source>
+    <target>hu1.hu</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>218.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="at1.at_ny1.ny">
+    <source>at1.at</source>
+    <target>ny1.ny</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>6802.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="at1.at_si1.si">
+    <source>at1.at</source>
+    <target>si1.si</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>277.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="be1.be_fr1.fr">
+    <source>be1.be</source>
+    <target>fr1.fr</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>264.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="be1.be_lu1.lu">
+    <source>be1.be</source>
+    <target>lu1.lu</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>186.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="be1.be_nl1.nl">
+    <source>be1.be</source>
+    <target>nl1.nl</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>169.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="ch1.ch_fr1.fr">
+    <source>ch1.ch</source>
+    <target>fr1.fr</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>410.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="ch1.ch_it1.it">
+    <source>ch1.ch</source>
+    <target>it1.it</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>250.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="cz1.cz_de1.de">
+    <source>cz1.cz</source>
+    <target>de1.de</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>411.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="cz1.cz_pl1.pl">
+    <source>cz1.cz</source>
+    <target>pl1.pl</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>309.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="cz1.cz_sk1.sk">
+    <source>cz1.cz</source>
+    <target>sk1.sk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_fr1.fr">
+    <source>de1.de</source>
+    <target>fr1.fr</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>478.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_gr1.gr">
+    <source>de1.de</source>
+    <target>gr1.gr</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1794.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_ie1.ie">
+    <source>de1.de</source>
+    <target>ie1.ie</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1088.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_it1.it">
+    <source>de1.de</source>
+    <target>it1.it</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>518.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_nl1.nl">
+    <source>de1.de</source>
+    <target>nl1.nl</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>358.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="de1.de_se1.se">
+    <source>de1.de</source>
+    <target>se1.se</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1184.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="es1.es_fr1.fr">
+    <source>es1.es</source>
+    <target>fr1.fr</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1054.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="es1.es_it1.it">
+    <source>es1.es</source>
+    <target>it1.it</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1189.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="es1.es_pt1.pt">
+    <source>es1.es</source>
+    <target>pt1.pt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>503.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="fr1.fr_lu1.lu">
+    <source>fr1.fr</source>
+    <target>lu1.lu</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>287.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="fr1.fr_uk1.uk">
+    <source>fr1.fr</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>343.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="gr1.gr_it1.it">
+    <source>gr1.gr</source>
+    <target>it1.it</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1453.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="hr1.hr_hu1.hu">
+    <source>hr1.hr</source>
+    <target>hu1.hu</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>304.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="hr1.hr_si1.si">
+    <source>hr1.hr</source>
+    <target>si1.si</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>115.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="hu1.hu_sk1.sk">
+    <source>hu1.hu</source>
+    <target>sk1.sk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>163.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="ie1.ie_uk1.uk">
+    <source>ie1.ie</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>463.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="il1.il_it1.it">
+    <source>il1.il</source>
+    <target>it1.it</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>2658.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="il1.il_nl1.nl">
+    <source>il1.il</source>
+    <target>nl1.nl</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>3296.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="nl1.nl_uk1.uk">
+    <source>nl1.nl</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>359.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="ny1.ny_uk1.uk">
+    <source>ny1.ny</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>5575.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="pl1.pl_se1.se">
+    <source>pl1.pl</source>
+    <target>se1.se</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>777.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="pt1.pt_uk1.uk">
+    <source>pt1.pt</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1588.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="se1.se_uk1.uk">
+    <source>se1.se</source>
+    <target>uk1.uk</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40000.0</capacity>
+      <cost>1426.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+  <link id="h_src-it1.it"><source>h_src</source><target>it1.it</target></link><link id="it1.it-h_src"><source>it1.it</source><target>h_src</target></link><link id="h_dst-ny1.ny"><source>h_dst</source><target>ny1.ny</target></link><link id="ny1.ny-h_dst"><source>ny1.ny</source><target>h_dst</target></link></links>
+ </networkStructure>
+</network>
