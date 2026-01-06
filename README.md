@@ -27,6 +27,10 @@ testnet/ – a simple 6-node topology for demonstration
 
 geant/ – a 24-node topology derived from the GEANT network
 
+<p align="center">
+  <img src="https://github.com/marcopolverini/ipa-prototype/blob/main/geant.jpg" alt="Geant topology" width="500"/>
+</p>
+
 To run a test, navigate to the desired topology and start the network:
 
 ```bash
